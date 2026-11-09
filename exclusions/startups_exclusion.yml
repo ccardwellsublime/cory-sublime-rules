@@ -6,3 +6,5 @@ source: |
   and any(recipients.to,
     .email.email in~ ("startups@sentry.io")
   )
+authors:
+  - name: Corys Rules
