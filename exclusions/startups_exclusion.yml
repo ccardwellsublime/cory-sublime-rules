@@ -1,10 +1,10 @@
 name: "Startup exclusion"
 description: "Test for github exclusion"
 type: "exclusion"
+authors:
+  - name: Corys Rules
 source: |
   type.inbound
   and any(recipients.to,
     .email.email in~ ("startups@sentry.io")
   )
-authors:
-  - name: Corys Rules
