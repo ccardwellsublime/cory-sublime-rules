@@ -1,4 +1,8 @@
-type.inbound
+name: "Startup exclusion"
+description: "Test for github exclusion"
+type: "exclusion"
+source: |
+  type.inbound
 and any(recipients.to,
         .email.email in~ ("startups@sentry.io")
 )
