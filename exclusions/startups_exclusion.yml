@@ -3,6 +3,6 @@ description: "Test for github exclusion"
 type: "exclusion"
 source: |
   type.inbound
-and any(recipients.to,
-        .email.email in~ ("startups@sentry.io")
-)
+  and any(recipients.to,
+    .email.email in~ ("startups@sentry.io")
+  )
