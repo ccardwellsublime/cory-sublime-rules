@@ -1,0 +1,4 @@
+type.inbound
+and any(recipients.to,
+        .email.email in~ ("startups@sentry.io")
+)
