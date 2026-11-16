@@ -1,0 +1,7 @@
+name: "Daybreak Cleaning sender"
+description: "looks for daybreak cleaning sender email"
+type: "rule"
+severity: "high"
+source: |
+  type.inbound
+    and sender.email.email == 'hey@daybreakcleaning.co' 
